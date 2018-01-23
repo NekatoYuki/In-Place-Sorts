@@ -1,12 +1,20 @@
+import java.util.Arrays;
 
 public class In_Place_Sorts {
 	
 	
 	public static void main(String args[])
 	{
-		int[] list1 = { 5,2,8,3,9,4,1,7};
-		insertionSort(list1);
-		System.out.println("Sorted Result:" + list1);
+		int [] test1 = {1,4,4,5,2,4,3,17,0};
+		double [] test2 = {1.1, 4.1,4.2,5.0,2.0,4.0,3.0,17.0,0.0};
+		String [] test3 = {"zebra", "tortilla", "abba", "foo", "bar", "aba"};
+		
+		long start = System.nanoTime();
+		insertionSort(test1);
+		long end = System.nanoTime();
+		long time = end - start;
+		System.out.println("Test1 took: " + time + "nanoseconds");
+		System.out.println(Arrays.toString(test1));
 	}
 	//Insertion
 	public static void insertionSort(int[] list1)
