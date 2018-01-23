@@ -15,6 +15,20 @@ public class In_Place_Sorts {
 		long time = end - start;
 		System.out.println("Test1 took: " + time + "nanoseconds");
 		System.out.println(Arrays.toString(test1));
+		
+		start = System.nanoTime();
+		selectionSort(test2);
+		end = System.nanoTime();
+		time = end - start;
+		System.out.println("Test2 took: " + time + "nanoseconds");
+		System.out.println(Arrays.toString(test2));
+		
+		start = System.nanoTime();
+		bubbleSort(test3);
+		end = System.nanoTime();
+		time = end - start;
+		System.out.println("Test3 took: " + time + "nanoseconds");
+		System.out.println(Arrays.toString(test3));
 	}
 	//Insertion
 	public static void insertionSort(int[] list1)
