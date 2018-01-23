@@ -5,6 +5,8 @@ public class In_Place_Sorts {
 	public static void main(String args[])
 	{
 		int[] list1 = { 5,2,8,3,9,4,1,7};
+		insertionSort(list1);
+		System.out.println("Sorted Result:" + list1);;
 	}
 	//Insertion
 	public static void insertionSort(int[] list1)
