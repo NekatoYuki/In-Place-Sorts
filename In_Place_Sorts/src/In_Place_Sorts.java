@@ -31,19 +31,19 @@ public class In_Place_Sorts {
 		System.out.println(Arrays.toString(test3)); */
 	}
 	//Insertion
-	public static void insertionSort(int[] list1)
+	public static void insertionSort(int[] test1)
 	{
-		int length = list1.length; // length equals length of list1
-        for (int i=1; i<length; i++) //starts at index 1 and checks up to last index of list1
+		int length = test1.length; // length equals length of test1
+        for (int i=1; i<length; i++) //starts at index 1 and checks up to last index of test1
         {
-            int k = list1[i]; //value at index i of list1
+            int k = test1[i]; //value at index i of test1
             int j = i-1; // current index - 1
-            while (j>=0 && list1[j]>k) //while the index equal or greater to 1 and index value before is greater than the index value after in list1
+            while (j>=0 && test1[j]>k) //while the index equal or greater to 1 and index value before is greater than the index value after in test1
             {
-                list1[j+1] = j; //moves index position back one
+                test1[j+1] = j; //moves index position back one
                 j = j-1; // (current index - 1) -1
             }
-            list1[j+1] = k; //else, leave order alone (list1[j+1] = list1[i] = int k)
+            test1[j+1] = k; //else, leave order alone (test1[j+1] = test1[i] = int k)
         }
 	}
 	
