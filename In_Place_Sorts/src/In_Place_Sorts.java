@@ -5,8 +5,8 @@ public class In_Place_Sorts {
 	
 	public static void main(String args[])
 	{
-		int [] test1 = {1,4,4,5,2,4,3,17,0};
-		double [] test2 = {1.1, 4.1,4.2,5.0,2.0,4.0,3.0,17.0,0.0};
+		int [] test1 = {1, 4, 4, 5, 2, 4, 3, 17, 0};
+		double [] test2 = {1.1, 4.1, 4.2, 5.0, 2.0, 4.0, 3.0, 17.0, 0.0};
 		String [] test3 = {"zebra", "tortilla", "abba", "foo", "bar", "aba"};
 		
 		long start = System.nanoTime();
@@ -22,13 +22,13 @@ public class In_Place_Sorts {
 		time = end - start;
 		System.out.println("Test2 took: " + time + "nanoseconds");
 		System.out.println(Arrays.toString(test2));
-		
+	/*	
 		start = System.nanoTime();
 		bubbleSort(test3);
 		end = System.nanoTime();
 		time = end - start;
 		System.out.println("Test3 took: " + time + "nanoseconds");
-		System.out.println(Arrays.toString(test3));
+		System.out.println(Arrays.toString(test3)); */
 	}
 	//Insertion
 	public static void insertionSort(int[] list1)
