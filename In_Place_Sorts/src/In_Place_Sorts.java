@@ -40,7 +40,7 @@ public class In_Place_Sorts {
             int j = i-1; // current index - 1
             while (j>=0 && test1[j]>k) //while the index equal or greater to 1 and index value before is greater than the index value after in test1
             {
-                test1[j+1] = j; //moves index position back one
+                test1[j+1] = test1[j]; //moves index position back one
                 j = j-1; // (current index - 1) -1
             }
             test1[j+1] = k; //else, leave order alone (test1[j+1] = test1[i] = int k)
@@ -51,7 +51,7 @@ public class In_Place_Sorts {
 	//Selection
 	public static void selectionSort(double[] list1)
 	{
-		
+		int length = test2.length; // length equals length of test2
 	}
 	
 	
