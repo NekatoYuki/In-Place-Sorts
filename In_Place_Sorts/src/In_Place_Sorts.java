@@ -58,11 +58,21 @@ public class In_Place_Sorts {
 		int length2 = test2.length; // length equals length of test2
 		for (int i=0; i<length2-1; i++) //for loop from the first index to the last index of the test2
 		{
-			int min = i;
+			int small = i; //small = previous index
+			for (int large = i+1; large<length2; large++) //for loop for later index checking upward until it reaches test2.length
+			{
+				if (test2[large]<test2[small]) // condition: if later index is smaller than previous index
+				{
+					small = large; //set int small to equal large
+				}
+			}
+			double value = test2[small]; //set double value to equal the value at index small
+			test2[small] = test2[i]; //set index small to equal index i
+			test2[i] = value;
 			
 		}
 	}
-	
+	//reference to https://www.geeksforgeeks.org/selection-sort/
 	
 	//Bubble
 	public static bubbleSort(String[] test3)
