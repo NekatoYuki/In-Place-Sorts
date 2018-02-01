@@ -78,9 +78,19 @@ public class In_Place_Sorts {
 	//Bubble
 	public static bubbleSort(String[] test3)
 	{
-		
+		int length3 = test3.length;
+		int swap_counter = 0;
+		while (swap_counter !=0)
+		{
+			for (int i=0; i<length3-1; i++)
+			{
+				if (test3[i+1]<test3[i])
+				{
+				
+				}
+			}	
+		}
+
 	}
-
 }
-
 
