@@ -82,7 +82,8 @@ public class In_Place_Sorts {
 		int swap_counter = 0;
 		while (swap_counter !=0)
 		{
-			for (int i=0; i<length3-1; i++)
+			int first = i;
+			for (int first=0; first<length3-1; first++)
 			{
 				if (test3[i+1]<test3[i])
 				{
