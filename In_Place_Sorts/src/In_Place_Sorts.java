@@ -46,8 +46,9 @@ public class In_Place_Sorts {
             {
                 test1[j+1] = test1[j]; //moves index position back one
                 j = j-1; // (current index - 1) -1
+                //index position is moved backed until value at index is less than the value of index after
             }
-            test1[j+1] = k; //else, leave order alone (test1[j+1] = test1[i] = int k)
+            test1[j+1] = k; //else, leave order alone (test1[j+1] = test1[i] = integer k)
         }
 	}
 	//reference to https://www.geeksforgeeks.org/insertion-sort/
@@ -63,12 +64,12 @@ public class In_Place_Sorts {
 			{
 				if (test2[large]<test2[small]) // condition: if later index is smaller than previous index
 				{
-					small = large; //set int small to equal large
+					small = large; //set small to equal large
 				}
 			}
 			double value = test2[small]; //set double value to equal the value at index small
 			test2[small] = test2[i]; //set index small to equal index i
-			test2[i] = value;
+			test2[i] = value; //set value at test2[i] to equal double value which equals value from test2[small]
 			
 		}
 	}
