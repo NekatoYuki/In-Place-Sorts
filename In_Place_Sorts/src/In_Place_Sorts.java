@@ -1,5 +1,9 @@
 import java.util.Arrays;
 
+
+//Kenneth Kim Period 2
+
+
 public class In_Place_Sorts {
 	
 	
@@ -33,8 +37,8 @@ public class In_Place_Sorts {
 	//Insertion
 	public static void insertionSort(int[] test1)
 	{
-		int length = test1.length; // length equals length of test1
-        for (int i=1; i<length; i++) //starts at index 1 and checks up to last index of test1
+		int length1 = test1.length; // length1 equals length of test1
+        for (int i=1; i<length1; i++) //starts at index 1 and checks up to last index of test1
         {
             int k = test1[i]; //value at index i of test1
             int j = i-1; // current index - 1
@@ -46,17 +50,22 @@ public class In_Place_Sorts {
             test1[j+1] = k; //else, leave order alone (test1[j+1] = test1[i] = int k)
         }
 	}
-	
+	//reference to https://www.geeksforgeeks.org/insertion-sort/
 	
 	//Selection
-	public static void selectionSort(double[] list1)
+	public static void selectionSort(double[] test2)
 	{
-		int length = test2.length; // length equals length of test2
+		int length2 = test2.length; // length equals length of test2
+		for (int i=0; i<length2-1; i++) //for loop from the first index to the last index of the test2
+		{
+			int min = i;
+			
+		}
 	}
 	
 	
 	//Bubble
-	public static bubbleSort(String[] list1)
+	public static bubbleSort(String[] test3)
 	{
 		
 	}
