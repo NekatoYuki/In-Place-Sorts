@@ -26,13 +26,13 @@ public class In_Place_Sorts {
 		time = end - start;
 		System.out.println("Test2 took: " + time + "nanoseconds");
 		System.out.println(Arrays.toString(test2));
-	/*	
+		
 		start = System.nanoTime();
 		bubbleSort(test3);
 		end = System.nanoTime();
 		time = end - start;
 		System.out.println("Test3 took: " + time + "nanoseconds");
-		System.out.println(Arrays.toString(test3)); */
+		System.out.println(Arrays.toString(test3)); 
 	}
 	//Insertion
 	public static void insertionSort(int[] test1)
@@ -76,22 +76,23 @@ public class In_Place_Sorts {
 	//reference to https://www.geeksforgeeks.org/selection-sort/
 	
 	//Bubble
-	public static bubbleSort(String[] test3)
+	public static void bubbleSort(String[] test3)
 	{
-		int length3 = test3.length;
-		int swap_counter = 0;
-		while (swap_counter !=0)
+		int length = test3.length;
+		String temp;
+		for (int i =0; i < length-1; i++)
 		{
-			int first = i;
-			for (int first=0; first<length3-1; first++)
+			for (int j =1; j < length-1; j++)
 			{
-				if (test3[i+1]<test3[i])
+				if ( (test3[j-1]).compareTo(test3[j])>=0) //if previous index is > than one after
 				{
-				
-				}
-			}	
+					temp = test3[j-1]; //swap method
+					test3[j-1] = test3[j];
+					test3[j] = temp;
+				}	
+			}
 		}
-
 	}
+	//reference to https://stackoverflow.com/questions/19214447/java-string-bubble-sorting
 }
 
